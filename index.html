@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0608</title>
+    <title>쉽 홈페이지 | SHIP</title>
     <style>
-       header{
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Gothic+A1:wght@300 & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= 노토+산스+KR:wght@500 & display=swap');
+     header{
            width:100%;
            height:250px;
            border:0px solid #cccccc;
-           margin-top:10px;
+           margin-top:0px;
+           background-color: aliceblue;
        }
        #logo{
            float:left;
@@ -18,26 +23,57 @@
            border-bottom: 0px dotted gray;
            
        }
+       #Ship{
+           font-family: 'Permanent Marker', cursive;
+           color: #123ad9;
+       }
        #top{
            float: right;
            margin:10px;
        }
-       nav{
-          border: 0px solid #cccccc;
+       #share1{
+        float: left;
+        margin-top: 60px;
+        margin-left: 79%;
+       }
+       #share2{
+        float: left;
+        margin-top: 5px;
+        margin-left: 79%;
+       }
+       #share3{
+        float: left;
+        margin-top: 5px;
+        margin-left: 79%;
+       }
+       nav {
           width: 100%;
           height:80px;
-          margin-top:0px;
+          margin-top: 0px;
           margin-bottom:50px;
-          border-top: 2px solid #dde5ec;
+          border-top: 1px solid #dde5ec;
           border-bottom: 2px solid #dde5ec;
-          padding-top: 20px;
+          padding-top: 0px;
           padding-bottom: 20px;
+          background-color: white;
        }
-       nav li{
-           display: inline;
-           margin: 60px 80px 0px;
+       #AA{
+        font-family: 'Gothic A1', 산세리프체;
        }
-      
+       #BB{
+        font-family:'Noto Sans KR', sans-serif;
+       }
+    
+    ul li{
+       margin: 0;
+       padding: 0px;
+       list-style: none;
+    }
+       
+      .sticky{
+        position: sticky;
+        top: 0px;
+      }
        section{
            float: left;
            border:0px solid #cccccc;
@@ -94,23 +130,59 @@
        .accent2{
            font-variant: small-caps;
        } 
-       #WepMenu ul ul {
-        display:none;
-        position:absolute;
-        background-color:#baeeff;
-       }
-       #WepMenu ul li:hover ul {
-        display: block;
-       }
-       #Wepmenu ul ul li {
-        float:none;
-       }
-       a:link{
+
+    #main-menu{
+        margin-left: 50px;
+    }
+    #main-menu > li {
+       float: left;
+       position: relative;
+       width: 230px;
+    }
+    #main-menu > li > a {
+       
+       
+       text-align: center;
+       text-decoration: none;
+       letter-spacing: 0.05em;
+       display: block;
+       padding: 14px 36px;
+       text-shadow: 1px 1px 1px rgba(8, 62, 255, 0.2);
+    }
+    
+    #sub-menu {
+       position: absolute;
+       width: max-content;
+       background: #baeeff;
+       visibility: hidden;
+       font-size: smaller;
+       border-radius: 5px;
+    }
+    #sub-menu > li {
+       padding: 16px 28px;
+    }
+    #sub-menu > li >  a {
+       color: rgb(0, 0, 0);
+       text-decoration: none;
+    }
+    #main-menu > li:hover #sub-menu {
+       
+       visibility: visible;
+    }
+    #sub-menu > li >  a:hover {
+        color: rgb(0, 95, 238);
+    }
+    
+    a:link{
         color: black;
        }
-      a:hover{
+    a:hover{
           color: rgb(0, 95, 238);
       }
+      
+    #contents{
+        font-family: 'Nanum Myeongjo', serif;
+    }
 
     </style>
 </head>
@@ -119,49 +191,52 @@
     <header>
 
     <div id="logo">
-       <h1> <img src="./image/ship3.png" width="160"> SHIP</h1>  
+       <h1 id="Ship"> <img src="D:\index.html\image\Ship.png" width="160"> SHIP</h1>  
     </div>
     <div id="top">
-        로그인 | <a href="index_sign.html" style="text-decoration:none">회원가입</a> | 사이트 맵
+        로그인 | <a href="test_sign.html" style="text-decoration:none">회원가입</a> | 사이트 맵
     </div>
+    <div id="share1"> <img src="./image/kakaoP.png" width="30"> </div>
+    <div id="share2"> <img src="./image/twitP.png" width="30"> </div>
+    <div id="share2"> <img src="./image/insta.png" width="30"> </div>
 
     </header>
 
-    <nav>
-        <div id="WepMenu">
-            <ul>
-            <li><a href="#" style="text-decoration:none">SHIP 소개</a></li>
-            
-             
-            
-            <li><a href="#" style="text-decoration:none">바다의 고통</a>
-            
-            <ul>
-            <li><a href="#" style="text-decoration:none">바다 동물의 아픔</a></li>
-            <li><a href="#" style="text-decoration:none">버려진 쓰레기</a></li>
-            </ul>
-
-            </li>
-            
-            
-            <li><a href="#" style="text-decoration:none">바다 지키기</a>
-            
-            <ul>
-            <li><a href="#" style="text-decoration:none">봉사활동</a></li>
-            <li><a href="index_try.html" style="text-decoration:none">일상 속 작은 실천</a></li>
-            <li><a href="#" style="text-decoration:none">제대로 재활용</a></li>
-            </ul>
-           
-            </li>
-            
-            
-            <li><a href="#" style="text-decoration:none">커뮤니티</a></li>
-            <li><a href="#" style="text-decoration:none">마이페이지</a></li>
-            <li><a href="#" style="text-decoration:none">고객센터</a></li>
-            </ul>
-            </div>
-    </nav>
+  
+    <nav class="sticky" >
+        <nav role="navigation">
+            <ul id="main-menu">
+              <li ><a href="#">SHIP 소개</a>
+              <ul id="sub-menu">
+                <li><a href="#" aria-label="subemnu">결성 계기</a></li>
+                <li><a href="#" aria-label="subemnu">캠페인 활동</a></li>
+              </ul>
+              </li>
     
+              <li><a href="#">바다의 고통</a>
+                <ul id="sub-menu">
+                  <li><a href="#" aria-label="subemnu">바다의 피해</a></li>
+                  <li><a href="#" aria-label="subemnu">버려진 쓰레기</a></li>
+                </ul>
+              </li>
+    
+              <li><a href="#">바다 지키기</a>
+                <ul id="sub-menu">
+                  <li><a href="#" aria-label="subemnu">봉사 활동</a></li>
+                  <li><a href="#" aria-label="subemnu">일상 속 작은 실천</a></li>
+                  <li><a href="#" aria-label="subemnu">제대로 재활용</a></li>
+                  <li><a href="#" aria-label="subemnu">후원</a></li>
+                </ul>
+              </li>
+    
+              <li><a href="#">커뮤니티</a></li>
+              <li><a href="#">마이페이지</a></li>
+              <li><a href="#">고객센터</a></li>
+            </ul>
+          </nav>
+    </nav>
+   
+
     <section>
         <img src="./image/tutle.jpg" width="600px" height="450px">
        
@@ -174,6 +249,7 @@
                 <span class="accent">I</span> don't like
                 <span class="accent">P</span>lastic
             </li>
+            <a id="content">
             <li>
                 바다를 지키기 위해 한 배를 탄 사람들<br>
                 우리 삶에 없어서는 안될 바다.<br> 
@@ -188,7 +264,7 @@
                 특히 최근 배달음식이나 온라인 쇼핑이 활성화되면서 급격히 늘고 있는 포장재로 국한하면 전 세계 2위였다." <br>
                 더 이상 외면할 수 없는 환경 문제, 보고만 있을 수 없다<br>
                 우리는 하나뿐인 지구의 소중한 바다를 지키기 위해 한 배를 탄 사람들이다<br>
-
+            </a>
 
 
             
